@@ -1,1 +1,60 @@
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#11110f}body{overflow-x:hidden;color:#15140f;font-family:Arial,Helvetica,sans-serif}.page-shell{width:100%;display:flex;justify-content:center}.stage{position:relative;width:min(100vw,1024px);aspect-ratio:2/3;overflow:hidden;container-type:inline-size;background:#f3ead9}.background-art{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;z-index:0}.sidebar{position:absolute;z-index:20;inset:0 auto 0 0;width:13.18%;height:100%;background:#11110f;color:#eee6d7;font-family:Baskerville,'Palatino Linotype',Georgia,serif}.sidebar-logo{position:absolute;top:5.9%;left:50%;width:7.8cqw;transform:translateX(-50%)}.sidebar-logo img{width:100%}.main-nav{position:absolute;top:12.55%;left:0;width:100%;display:flex;flex-direction:column;align-items:center;gap:3.6cqw}.main-nav a,.legal-links a{text-decoration:none;text-transform:uppercase;color:#eee6d7;font-size:.78cqw;letter-spacing:.035em;white-space:nowrap}.main-nav a.active{color:#c69a38}.main-nav a.active:before{content:'◆';position:absolute;margin-left:-1.2cqw;font-size:.5cqw}.sidebar-bottom{position:absolute;bottom:5%;width:100%;display:flex;flex-direction:column;align-items:center}.legal-links{display:flex;flex-direction:column;align-items:center;gap:.9cqw;margin-bottom:1.6cqw}.legal-links a{font-size:.6cqw}.sidebar-tree{width:5.25cqw}.panel{position:absolute;z-index:10;left:13.18%;width:86.82%;text-align:center;color:#15140f;text-rendering:geometricPrecision;-webkit-font-smoothing:antialiased}.panel h1,.panel h2,.panel p{margin:0}.hero-panel{top:5%;height:14.2%}.hero-panel h1{font:400 4.55cqw/.95 Baskerville,'Palatino Linotype',Georgia,serif;letter-spacing:.185em;text-indent:.185em}.subbrand{margin-top:.68cqw!important;font:400 1.08cqw/1.1 Baskerville,'Palatino Linotype',Georgia,serif!important;letter-spacing:.205em}.hero-claim{margin-top:4.10cqw!important;font:400 1.67cqw/1.18 Baskerville,'Palatino Linotype',Georgia,serif!important;letter-spacing:.035em}.hero-copy{margin-top:1.90cqw!important;font:400 .73cqw/1.45 Arial,sans-serif!important}.kicker{font:400 .75cqw/1.1 Baskerville,'Palatino Linotype',Georgia,serif!important;letter-spacing:.025em}.panel h2{font:400 1.48cqw/1.18 Baskerville,'Palatino Linotype',Georgia,serif;letter-spacing:.042em}.body-copy{font:400 .69cqw/1.55 Arial,sans-serif!important}.about-panel{top:23.95%}.about-panel h2,.offers-panel h2,.event-panel h2{margin-top:2.15cqw}.about-panel .body-copy,.offers-panel .body-copy,.event-panel .body-copy{margin-top:1.05cqw}.offers-panel{top:34.85%}.gallery-panel{top:45.38%}.event-panel{top:67.05%}.contact-panel{top:77.95%}.contact-panel h2{margin-top:2.05cqw}.contact-form{width:38cqw;margin:2.05cqw auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:.58cqw;text-align:left}.contact-form label{position:relative}.contact-form label span{position:absolute;left:.62cqw;top:.58cqw;font-size:.55cqw}.contact-form input,.contact-form select,.contact-form textarea{width:100%;border:1px solid rgba(82,72,55,.35);background:rgba(245,239,225,.72)}.contact-form input,.contact-form select{height:2.75cqw}.contact-form textarea{height:4.8cqw}.field-type{grid-column:1}.field-message{grid-column:2/4;grid-row:2/4}.contact-form button{grid-column:2;border:0;background:#11120f;color:#caa34d;height:2.6cqw;font-size:.63cqw;letter-spacing:.09em}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#11110f}
+body{overflow-x:hidden;color:#15140f;font-family:Arial,Helvetica,sans-serif}
+.page-shell{width:100%;display:flex;justify-content:center;background:#11110f}
+.stage{position:relative;width:min(100vw,1024px);aspect-ratio:2/3;overflow:hidden;container-type:inline-size;background:#f3ead9}
+.background-art{position:absolute;inset:0;z-index:0;width:100%;height:100%;display:block;object-fit:fill;user-select:none;-webkit-user-drag:none}
+
+/* Sidebar – proportional wie in der freigegebenen Vorlage */
+.sidebar{position:absolute;z-index:20;left:0;top:0;width:16.65%;height:100%;background:linear-gradient(90deg,#10110f,#12130f);color:#eee6d7;font-family:Baskerville,'Palatino Linotype','Book Antiqua',Georgia,serif}
+.sidebar-logo{position:absolute;top:6.15%;left:50%;width:7.4cqw;transform:translateX(-50%)}
+.sidebar-logo img{width:100%;height:auto;display:block}
+.main-nav{position:absolute;top:12.75%;left:0;width:100%;display:flex;flex-direction:column;align-items:center;gap:3.75cqw}
+.main-nav a{position:relative;text-decoration:none;text-transform:uppercase;color:#eee6d7;font-size:.82cqw;letter-spacing:.035em;white-space:nowrap;text-rendering:geometricPrecision;-webkit-font-smoothing:antialiased}
+.main-nav a.active{color:#c69a38}
+.main-nav a.active:before{content:'◆';position:absolute;left:-1.35cqw;top:.02cqw;font-size:.48cqw;color:#c69a38}
+.main-nav a.active:after{content:'';position:absolute;left:50%;top:1.9cqw;width:4.7cqw;height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,#9f792d 24%,#9f792d 76%,transparent)}
+.sidebar-bottom{position:absolute;left:0;bottom:2.35%;width:100%;display:flex;flex-direction:column;align-items:center}
+.socials{display:flex;gap:.72cqw;margin-bottom:1.9cqw}
+.socials span{width:1.7cqw;height:1.7cqw;border:1px solid #ae842f;border-radius:50%;display:grid;place-items:center;color:#c69a38;font:400 .64cqw/1 Arial,sans-serif}
+.sidebar-divider{width:5.8cqw;height:1.1cqw;display:flex;align-items:center;margin-bottom:1.45cqw}
+.sidebar-divider span{flex:1;height:1px;background:#a27a2b}.sidebar-divider i{width:.43cqw;height:.43cqw;margin:0 .38cqw;background:#c69a38;transform:rotate(45deg)}
+.legal-links{display:flex;flex-direction:column;align-items:center;gap:.9cqw;margin-bottom:1.6cqw}
+.legal-links a{text-decoration:none;text-transform:uppercase;color:#eee6d7;font-size:.62cqw;letter-spacing:.025em}
+.sidebar-tree{width:5.1cqw;height:auto}
+
+/* Content */
+.panel{position:absolute;z-index:10;left:16.65%;width:83.35%;text-align:center;color:#15140f;text-rendering:geometricPrecision;-webkit-font-smoothing:antialiased}
+.panel h1,.panel h2,.panel p{margin:0}
+.hero-panel{top:4.65%;height:15.0%}
+.hero-panel h1{font:400 4.45cqw/.95 Baskerville,'Palatino Linotype','Book Antiqua',Georgia,serif;letter-spacing:.185em;text-indent:.185em}
+.subbrand{margin-top:.62cqw!important;font:400 1.08cqw/1.1 Baskerville,'Palatino Linotype','Book Antiqua',Georgia,serif!important;letter-spacing:.205em}
+.ornament{width:4.5cqw;height:1.2cqw;margin:.32cqw auto .58cqw;display:flex;align-items:center;justify-content:center}
+.ornament-wide{width:17.5cqw;margin-top:.52cqw;margin-bottom:.78cqw}
+.ornament span{height:1px;flex:1;background:linear-gradient(90deg,transparent,#b68a32 28%,#b68a32)}
+.ornament span:last-child{background:linear-gradient(90deg,#b68a32,#b68a32 72%,transparent)}
+.ornament i{width:.46cqw;height:.46cqw;background:#b68a32;transform:rotate(45deg);margin:0 .52cqw}
+.hero-claim{font:400 1.67cqw/1.18 Baskerville,'Palatino Linotype','Book Antiqua',Georgia,serif!important;letter-spacing:.035em}
+.hero-copy{margin-top:1.45cqw!important;font:400 .84cqw/1.45 Arial,sans-serif!important}
+
+.kicker{font:400 .84cqw/1.1 Baskerville,'Palatino Linotype','Book Antiqua',Georgia,serif!important;letter-spacing:.025em}
+.panel h2{font:400 1.56cqw/1.18 Baskerville,'Palatino Linotype','Book Antiqua',Georgia,serif;letter-spacing:.042em}
+.body-copy{font:400 .82cqw/1.5 Arial,sans-serif!important}
+
+.about-panel{top:24.0%}
+.about-panel h2{margin-top:.52cqw}.about-panel .body-copy{margin-top:.92cqw}
+.offers-panel{top:35.2%}
+.offers-panel h2{margin-top:.52cqw}.offers-panel .body-copy{margin-top:.92cqw}
+.gallery-panel{top:45.7%}
+.event-panel{top:67.0%}
+.event-panel h2{margin-top:.52cqw;font-size:1.58cqw}.event-panel .body-copy{margin-top:.92cqw}
+.contact-panel{top:77.9%}
+.contact-panel h2{margin-top:.52cqw;font-size:1.56cqw}
+
+.contact-form{width:40cqw;margin:1.45cqw auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:.58cqw;text-align:left}
+.contact-form label{position:relative;display:block}.contact-form label span{position:absolute;left:.6cqw;top:.5cqw;font-size:.58cqw;color:#3f3a31;z-index:2}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;border:1px solid rgba(82,72,55,.35);background:rgba(245,239,225,.78);color:#17150f}
+.contact-form input,.contact-form select{height:2.65cqw;padding:.95cqw .55cqw .25cqw}.contact-form textarea{height:4.9cqw;padding:1.1cqw .55cqw .35cqw;resize:none}
+.field-type{grid-column:1}.field-message{grid-column:2/4;grid-row:2/4}.contact-form button{grid-column:2;grid-row:4;border:0;background:#11120f;color:#caa34d;height:2.6cqw;font-size:.65cqw;letter-spacing:.09em}
+
+@media(max-width:700px){.stage{width:100vw}.main-nav a{font-size:max(6px,.82cqw)}.legal-links a{font-size:max(5px,.62cqw)}.body-copy{font-size:max(6px,.82cqw)!important}.hero-copy{font-size:max(6px,.84cqw)!important}}
