@@ -1,1 +1,2 @@
 WINBERG site bootstrap
+Preview v2 asset staged without changing homepage.
